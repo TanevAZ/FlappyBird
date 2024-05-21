@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Flappy Bird</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #70c5ce;
+            position: relative;
+        }
+        canvas {
+            background: #70c5ce;
+            border: 1px solid #000;
+        }
+        .scoreboard {
+            display: none;
+            position: absolute;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: #FFA500;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+        .scoreboard p {
+            margin: 10px 0;
+            font-size: 24px; /* font size */
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="1530" height="722"></canvas>
+    <div class="scoreboard" id="scoreboard">
+        <p>Score: <span id="currentScore">0</span></p>
+        <p>Best: <span id="bestScore">0</span></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
